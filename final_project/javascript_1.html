@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  </head>
+<body>
+  <h1>Lecture 40</h1>
+ 
+  <script>
+  var x = "in global scope";
+  console.log("global: message "+x);
+  var a = function(){
+	var x = "inside A";
+	console.log("A(): "+x);
+	  var b= function(){
+	console.log("B() : "+x);
+  }
+	b();
+  }
+
+  a();
+  </script>
+
+</body>
+</html>
